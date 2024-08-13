@@ -1,0 +1,26 @@
+.image-container {
+    position: relative; /* Enable absolute positioning for the button */
+  }
+  
+  .image-container:hover .button-overlay {
+    display: flex; /* Allow button content to wrap */
+    justify-content: center; /* Center button horizontally */
+    align-items: center; /* Center button vertically */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure button covers entire image */
+    height: 100%; /* Ensure button covers entire image */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white; /* Button text color */
+    font-size: 16px; /* Adjust button text size */ /* Optional: adjust other button styles */
+    padding: 10px 20px; /* Adjust button padding */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Indicate hover interaction */
+    transition: opacity 0.3s ease; /* Smooth opacity transition on hover */
+  }
+
+  .image-container:hover .button-overlay:hover {
+    opacity: 0.8; /* Increase opacity slightly on button hover */
+  }
+  

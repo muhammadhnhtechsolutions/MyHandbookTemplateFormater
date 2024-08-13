@@ -1,0 +1,11 @@
+{ "applinks":
+      { "apps": [],
+        "details": [
+             { "appID": "5FQV9R5NVC.com.FamilyHandBook",
+                "paths": [ "*" ] },
+             { "appID": "5FQV9R5NVC.com.FamilyHandBook",
+               "paths": [ "*" ]
+             }
+          ]
+       }
+}

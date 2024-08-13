@@ -1,0 +1,430 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Droid+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind utilities;
+
+
+@layer utilities {
+  .btn-main{
+    @apply text-sm md:text-base lg:text-[16px] hover:text-white hover:bg-primary duration-300 ease-in hover:ease-out py-2 px-6 text-black bg-[#FDA513]  rounded-3xl;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    background-color: #023d6d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #21a7d0;
+  }
+  
+  .box {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .img-preview {
+    overflow: hidden;
+  }
+
+  .cropper-crop-box,
+  .cropper-view-box {
+    border-radius: 50%;
+  }
+  
+  .cropper-view-box {
+    box-shadow: 0 0 0 1px #39f;
+    outline: 0;
+  }
+.numbers::-webkit-outer-spin-button,
+.numbers::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+  /* MY family handbbok */
+  
+  .text-content {
+    position: absolute;  /* Overlap the image */
+    top: 50%;  /* Center vertically */
+    left: 50%;  /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning based on content size */
+    text-align: center;  /* Center text horizontally within the box */
+    /* Optional styles: adjust padding, background color, etc. */
+  }
+/* Importing Droid Serif font from Google Fonts */
+/* .toast {
+  background-color: #023D6D !important; /* Default background color */
+  .custom-toast {
+    background-color: #023D6D !important;
+    color: white !important;
+  }
+  
+.droid {
+  font-family: 'Droid Serif'  !important;
+}
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+   
+  }
+  .rounded-full-image {
+    clip-path: url(#SVGID_4_); /* Apply the circular clipping path */
+    border-radius: 50%; /* Make the image rounded */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+/* Profile.css */
+.input-field {
+  outline: none;
+  border-bottom: 2px solid #ccc; /* Change the border color as needed */
+  border-radius: 4px;
+  padding: 0.5rem; /* Adjust padding as needed */
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.input-field:focus {
+  border-bottom-color: #007bff; /* Color on focus */
+}
+  
+ /* card box start  */
+ .card-box::before{
+  content: "";
+  position: absolute;
+  bottom: 6%;
+  left: 2.%;
+  border-top: 15px solid #718076;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+
+
+}
+.card-box::after{
+  content: "";
+  position: absolute;
+  bottom: 5.%;
+  right: 3.2%;
+  border-top: 15px solid #718076;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+
+
+
+}
+.quote{
+  width: 50px;
+  height: 45px;
+  background: #ff9200;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  line-height: 42px;
+  position: absolute;
+  top: 30%;
+  left: -2%;
+  z-index: 30;
+}
+.quote::before{
+  content: "";
+  border-bottom: 16px solid #ff9200;
+  border-left: 18px solid transparent;
+  position: absolute;
+  top: -16px;
+  left: 1px;
+}
+/* card box end */
+
+}
+.body{
+  font-family: "Nunito", sans-serif;
+}
+.scrollSideBar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollSideBar::-webkit-scrollbar-thumb {
+  background-color: #FDA513;
+  border-radius: 50px;
+}
+.menu-button {
+  position: relative;
+}
+
+.menu-button:hover::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #FDA513;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-85%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 1.2s linear infinite;
+}
+
+.abbbbb{
+ 
+  /* background: #175f87; */
+  border-color: #175f87;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.abbbbb1{
+
+  border-color: #175f87;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.abcd{
+  background-image: image('background.webp');
+}
+.reji{
+  background-image: url('./assets/imges/backcolor.webp');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+
+  height: auto;
+  width: 100%;
+}
+
+.aniation-shade{
+  animation: rotateUpDown  1.5s linear infinite;
+  
+}
+.comic-neue-regular {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.ql-font-comic-sans {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+.ql-font-arial {
+  font-family: Arial, sans-serif;
+}
+
+.ql-font-courier-new {
+  font-family: 'Courier New', Courier, monospace;
+}
+.ql-font-georgia {
+  font-family: Georgia, serif;
+}
+.ql-font-helvetica {
+  font-family: Helvetica, sans-serif;
+}
+.ql-font-lucida {
+  font-family: 'Lucida Sans', sans-serif;
+}
+.ql-font-times-new-roman {
+  font-family: 'Times New Roman', Times, serif;
+}
+.ql-font-trebuchet {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+.ql-font-verdana {
+  font-family: Verdana, Geneva, sans-serif;
+}
+.ql-font-impact {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+
+@keyframes rotateUpDown {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+}
+}
+.shad{
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 5;
+  animation-fill-mode: forwards;
+}
+
+/* responsive css  */
+#mobile-responsive{
+  position: absolute;
+  /* top: 5px; */
+  padding: 7px;
+  width: 136px;
+}
+#largeScreen{
+  display: block;
+}
+#smallScreen{
+  display: none;
+}
+.ql-container{
+  min-height: 300px;
+}
+@media (max-width:425px) and (min-width:320px) {
+  #mobile-responsive{
+    position: absolute;
+    top: 5px;
+    padding: 7px;
+    width: 120px;
+  }
+  #FlipsnackHeadiing{
+    display: none;
+  }
+  #largeScreen{
+    display: none;
+  }
+  #smallScreen{
+    display: block;
+  }
+}
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 10v;
+  z-index: 9999;
+}
+@media  (max-width:425px) and (min-width:400px) {
+  #responsive_introduction{
+   height: 83vh;
+  }
+}
+@media  (max-width:400px) and (min-width:380px) {
+  #responsive_introduction{
+   height: 61vh;
+  }
+}
+@media  (max-width:380px) and (min-width:375px) {
+  #responsive_introduction{
+   height: 83vh;
+  }
+}
+@media  (max-width:320px) and (min-width:300px) {
+  #responsive_introduction{
+   height: 91vh;
+  }
+}
+
+@media  (max-width:360px) and (min-width:350px) {
+  #responsive_introduction{
+   height: 64vh;
+  }
+}
+/* .loader_image {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* responsive css  */
+/* responsive MODAL css  */
+/* #responsive_help_modal{
+      background-color: rgba(0, 0, 0, 0.9) !important;
+      top: 45% !important;
+      left: 50% !important;
+      right: auto !important;
+      bottom: auto !important;
+      margin-right: -50% !important;
+      transform: translate(-50% -50%) !important;
+      border: none !important;
+      background: transparent !important;
+      overflow: visible !important;
+      width:0% !important;
+      border-radius: 10px !important;
+} */
+
+/* responsive MODAL css  */
+
+
+.Toastify__toast--custom-error {
+  background-color: red !important;
+  color: white;
+}
+
+/* Set content font-families */
+.ql-font-Roboto {
+  font-family: 'Roboto';
+}
+.ql-font-Raleway {
+  font-family: 'Raleway';
+}
+.ql-font-Montserrat {
+  font-family: 'Montserrat';
+}
+.ql-font-Lato {
+  font-family: 'Lato';
+}
+.ql-font-Rubik {
+  font-family: 'Rubik';
+}
+
+
+
+
+.value {
+  border-left: 24px solid #000;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+
